@@ -1,0 +1,13 @@
+/*
+
+  All variables related to the grid, including breakpoints
+
+*/
+
+// The breakpoints for triggering different styles
+$g-grid--small-bp  : em(480px);
+$g-grid--medium-bp : em(787px);
+$g-grid--large-bp  : em(900px);
+
+// The max-width for containers and other max-widths
+$g-grid--max-width : em(1200px);
