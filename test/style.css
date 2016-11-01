@@ -462,53 +462,53 @@ body {
 }
 
 body {
-  padding: 0.875em;
+  padding: 1em;
 }
 
 h1 {
-  margin: 0.44em 0;
-  font-size: 3.33786em;
-  line-height: 1.36719em;
+  margin: 0.5em 0;
+  font-size: 3.8147em;
+  line-height: 1.5625em;
 }
 
 h2 {
-  margin: 0.44em 0;
-  font-size: 2.67029em;
-  line-height: 1.36719em;
+  margin: 0.5em 0;
+  font-size: 3.05176em;
+  line-height: 1.5625em;
 }
 
 h3 {
-  margin: 0.44em 0;
-  font-size: 2.13623em;
-  line-height: 1.36719em;
+  margin: 0.5em 0;
+  font-size: 2.44141em;
+  line-height: 1.5625em;
 }
 
 h4 {
-  margin: 0.44em 0;
-  font-size: 1.70898em;
-  line-height: 1.36719em;
+  margin: 0.5em 0;
+  font-size: 1.95312em;
+  line-height: 1.5625em;
 }
 
 h5 {
-  margin: 0.44em 0;
-  font-size: 1.36719em;
-  line-height: 1.36719em;
+  margin: 0.5em 0;
+  font-size: 1.5625em;
+  line-height: 1.5625em;
 }
 
 h6 {
-  margin: 0.44em 0;
-  font-size: 1.09375em;
-  line-height: 1.36719em;
+  margin: 0.5em 0;
+  font-size: 1.25em;
+  line-height: 1.5625em;
 }
 
 p {
-  margin: 0 0 0.875em 0;
-  font-size: 0.875em;
-  line-height: 1.36719em;
+  margin: 0 0 1em 0;
+  font-size: 1em;
+  line-height: 1.5625em;
 }
 
 small {
-  margin: 0.44em 0;
-  font-size: 0.7em;
-  line-height: 1.09375em;
+  margin: 0.5em 0;
+  font-size: 0.8em;
+  line-height: 1.25em;
 }

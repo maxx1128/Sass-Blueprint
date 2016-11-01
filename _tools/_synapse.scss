@@ -51,19 +51,6 @@
   @return join($value, $list);
 }
 
-// An example of how to configure Synapse's settings for the grid
-$synapse: (
-  columns: 12,
-  layouts: (
-        xs:  0,
-        sm:  480px,
-        md:  787px,
-        lg: 1024px,
-        xlg: 1200px
-    ),
-  spaceUnits: (8px, 1em, 2em, 3em, 4em)
-);
-
 // List of all basic utilities, easy to edit.
 // The same of each sub-map is the utility name to reference in the mixin
 // The properties and values are the utilities' CSS components
@@ -396,18 +383,6 @@ $full-spacing: $spacing;
 
 */
 
-$synapse: (
-  columns: 12,
-  layouts: (
-        xs:  0,
-        sm:  480px,
-        md:  787px,
-        lg: 1024px,
-        xlg: 1200px
-    ),
-  spaceUnits: (8px, 1em, 2em, 3em, 4em)
-);
-
 
 @mixin synapse-custom($var) {
 /*
@@ -421,6 +396,9 @@ $synapse: (
   }
 */
 }
+
+
+
 
 // @include generate-padding();
 // @include generate-margin();

@@ -6,13 +6,13 @@
 
 
 // All spacing units
-$g-layout--spc          : em(14px);
+$g-layout--spc          : em(16px);
 
 $g-layout--spc-4x       : decimal-round(($g-layout--spc * 4), 2);
 $g-layout--spc-2x       : decimal-round(($g-layout--spc * 2), 2);
 
 $g-layout--spc-half     : decimal-round(($g-layout--spc / 2), 2);
-$g-layout--spc-quart    : decimal-round(($g-layout--spc / 2), 2);
+$g-layout--spc-quart    : decimal-round(($g-layout--spc / 4), 2);
 
 
 // Z-index variables
