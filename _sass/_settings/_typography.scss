@@ -1,11 +1,6 @@
-@import '../_tools/_modular-scale.scss';
+@import '../_tools/modular-scale';
 
-/*
-
-  All typography variables
-
-*/
-
+// All typography variables
 
 // For pulling any typography values
 // For most no base is set so it always needs two values
@@ -15,25 +10,24 @@
   }
 }
 
-
-
-
 // Modular Scale variables
-$g-modular-scale--base  : spacing();
-$g-modular-scale--ratio : 1.25; // Major third
+$g-modular-scale--base: spacing();
+$g-modular-scale--ratio: 1.25; // Major third
 
 
 // Font families
-$g-fontFamily-base   : 'Lucida Grande', Verdana, Arial, sans-serif;
-$g-fontFamily-header : 'Futura', Helvetica, Arial, sans-serif;
-$g-fontFamily-mono   : 'add monospace here';
+$g-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$g-font-family-header: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$g-font-family-mono: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+
+
 
 
 $typography-map: (
   font-family: (
-    base: $g-fontFamily-base,
-    header: $g-fontFamily-header,
-    mono: $g-fontFamily-mono
+    base: $g-font-family-base,
+    header: $g-font-family-header,
+    mono: $g-font-family-mono
   ),
 
   font-size: (
@@ -68,12 +62,12 @@ $typography-map: (
   ),
 
   margin: (
-    h1: 0 0 spacing(),
-    h2: 0 0 spacing(),
-    h3: 0 0 spacing(),
-    h4: 0 0 spacing(half),
-    h5: 0 0 spacing(half),
-    h6: 0 0 spacing(half),
+    h1: 0 0 spacing(half),
+    h2: 0 0 spacing(half),
+    h3: 0 0 spacing(half),
+    h4: 0 0 spacing(third),
+    h5: 0 0 spacing(third),
+    h6: 0 0 spacing(third),
     p: 0 0 spacing() 0,
     small: 0 0 spacing(half),
     tiny: 0 0 spacing(half)

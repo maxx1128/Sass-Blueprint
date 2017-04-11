@@ -1,55 +1,5 @@
 /*
 
-    These are functions used for calculations and adjusting raw values. Frequently used and referenced before settings.
-
-*/
-/*
-
-  All layout variables, such as spacing, layering, and others. Not grid ones, which refer to screen sizes and dimensions.
-
-*/
-/*
-
-  Mixins and functions related to controlling and adjusting colors
-
-*/
-/*
-
-  All color palettes
-
-*/
-/*
-
-  All variables related to the grid, including breakpoints
-
-*/
-/*
-
-  All typography variables
-
-*/
-/*
-
-  Styles for containers to enforce common textures among container elements
-
-*/
-/*
-
-  Mixins and functions related to controlling and adjusting colors
-
-*/
-/*
-
-  Mixins needed for controlling grid dimensions and responsive styles, as well as layout-related styles
-
-*/
-/*
-
-  Mixins for selecting certain classes and states related to other elements. For more efficient selections
-
-*/
-/*
-
   Configuration for Synapse in this project below
 
 */
@@ -458,47 +408,51 @@ textarea {
 
 html,
 body {
-  box-sizing: border-box;
   color: #111;
-  background-color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
+  min-height: 100vh;
   padding: 1em;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
-  margin: 0 0 1em;
+  margin: 0 0 0.5em;
   font-size: 3.05em;
   line-height: 1.95em;
 }
 
 h2 {
-  margin: 0 0 1em;
+  margin: 0 0 0.5em;
   font-size: 2.44em;
   line-height: 1.95em;
 }
 
 h3 {
-  margin: 0 0 1em;
+  margin: 0 0 0.5em;
   font-size: 1.95em;
   line-height: 1.95em;
 }
 
 h4 {
-  margin: 0 0 0.5em;
+  margin: 0 0 0.33em;
   font-size: 1.56em;
   line-height: 1.56em;
 }
 
 h5 {
-  margin: 0 0 0.5em;
+  margin: 0 0 0.33em;
   font-size: 1.25em;
   line-height: 1.56em;
 }
 
 h6 {
-  margin: 0 0 0.5em;
+  margin: 0 0 0.33em;
   font-size: 1em;
   line-height: 1.56em;
 }
@@ -519,4 +473,22 @@ tiny {
   margin: 0 0 0.5em;
   font-size: 0.64em;
   line-height: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: #ff826e;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #bf6253;
 }

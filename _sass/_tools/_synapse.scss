@@ -220,8 +220,8 @@ $full-spacing: $spacing;
 @mixin generate-grid-classes($row-pad, $col-pad, $max-width: 0) {
   $syn-layouts: map-get($synapse, layouts);
   $syn-columns: map-get($synapse, columns);
-  $syn-row-padding: nth($syn-spacing, $row-pad);
-  $syn-col-padding: nth($syn-spacing, $col-pad);
+  $syn-row-padding: $row-pad;
+  $syn-col-padding: $col-pad;
 
 
   .syn-row {

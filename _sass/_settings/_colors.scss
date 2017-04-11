@@ -1,4 +1,4 @@
-@import '../_tools/_colors.scss';
+@import '../_tools/colors';
 
 // This function pulls specific color values from the below map
 @function color($color, $tone: 'base') {
@@ -7,18 +7,14 @@
   }
 }
 
-/*
-
-  All color palettes
-
-*/
+// All color palettes
 
 $g-color--shade: 25%;
 
-$g-color--primary   : #6ab8cc;
-$g-color--secondary : #b0ba52;
-$g-color--action    : #ff826e;
-$g-color--mono      : #cbcbcb;
+$g-color--primary: #6ab8cc;
+$g-color--secondary: #b0ba52;
+$g-color--action: #ff826e;
+$g-color--mono: #cbcbcb;
 
 
 // Map for storing all color variables

@@ -1,8 +1,8 @@
 // function for getting values along the modular scale
 // Courtesy of Bourbon - https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_modular-scale.scss
 
-$g-modular-scale--base  : 1rem !default;
-$g-modular-scale--ratio : 1.333 !default; // Perfect fourth
+$g-modular-scale--base: 1rem !default;
+$g-modular-scale--ratio: 1.333 !default; // Perfect fourth
 
 @function modular-scale($increment, $value: $g-modular-scale--base, $ratio: $g-modular-scale--ratio) {
   $v1: nth($value, 1);

@@ -1,9 +1,4 @@
-/*
-
-    These are functions used for calculations and adjusting raw values. Frequently used and referenced before settings.
-
-*/
-
+// These are functions used for calculations and adjusting raw values. Frequently used and referenced before settings.
 
 /// Remove the unit of a length
 /// @param {Number} $number - Number to remove unit from
@@ -17,12 +12,10 @@
 }
 
 
-
-
 // Converts pixel values to em values
 @function em($pixels, $context: 16) {
-    
-  $em: (strip-unit($pixels)/$context) * 1em;
+
+  $em: (strip-unit($pixels) / $context) * 1em;
 
   @return $em;
 }
@@ -30,8 +23,8 @@
 
 // Converts pixel values to rem values
 @function rem($pixels, $context: 16) {
-    
-  $rem: (strip-unit($pixels)/$context) * 1rem;
+
+  $rem: (strip-unit($pixels) / $context) * 1rem;
 
   @return $rem;
 }
@@ -45,46 +38,42 @@
 /// @return {String} - Updated string
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
-  
+
   @if $index {
     @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
   }
-  
+
   @return $string;
 }
 
 
 // Rounds the inputted number to the set number of decimals
 @function decimal-round ($number, $digits: 0, $mode: round) {
-    $n: 1;
-    // $number must be a number
-    @if type-of($number) != number {
-        @warn '#{ $number } is not a number.';
-        @return $number;
-    }
-    // $digits must be a unitless number
-    @if type-of($digits) != number {
-        @warn '#{ $digits } is not a number.';
-        @return $number;
-    } @else if not unitless($digits) {
-        @warn '#{ $digits } has a unit.';
-        @return $number;
-    }
-    @for $i from 1 through $digits {
-        $n: $n * 10;
-    }
-    @if $mode == round {
-        @return round($number * $n) / $n;
-    } @else if $mode == ceil {
-        @return ceil($number * $n) / $n;
-    } @else if $mode == floor {
-        @return floor($number * $n) / $n;
-    } @else {
-        @warn '#{ $mode } is undefined keyword.';
-        @return $number;
-    }
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) != number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) != number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @for $i from 1 through $digits {
+    $n: $n * 10;
+  }
+  @if $mode == round {
+    @return round($number * $n) / $n;
+  } @else if $mode == ceil {
+    @return ceil($number * $n) / $n;
+  } @else if $mode == floor {
+    @return floor($number * $n) / $n;
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
 }
-
-
-
-

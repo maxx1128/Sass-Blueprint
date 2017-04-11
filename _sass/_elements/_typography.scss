@@ -3,7 +3,7 @@ $type-elements: h1, h2, h3, h4, h5, h6, p, small, tiny;
 
 // ...and loop through them to establish their base styles!
 @each $element in $type-elements {
-  
+
   #{$element} {
     margin: type(margin, #{$element});
 
@@ -11,6 +11,13 @@ $type-elements: h1, h2, h3, h4, h5, h6, p, small, tiny;
     line-height: type(line-height, #{$element});
   }
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: type(font-family, header); }
 
 a {
   color: color(action);
