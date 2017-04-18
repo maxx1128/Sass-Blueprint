@@ -2,18 +2,22 @@
 
 // Mixin to use with the breakpoint map, sets any styles to be used above a certain screen width
 @mixin larger-than($point-name) {
-  $width: map-get($breakpoint-map, $point-name);
-
-  @media (min-width: $width) {
-    @content;
+  @if map-has-key($breakpoint-map, $point-name) {
+    $width: map-get($breakpoint-map, $point-name);
+  } @else {
+    $width: $point-name;
   }
+
+  @media (min-width: $width) { @content; }
 }
 
 // Mixin to use with the breakpoint map, sets any styles to be used below a certain screen width. Try to use the larger-than mixin unless it can't be avoided.
 @mixin smaller-than($point-name) {
-  $width: map-get($breakpoint-map, $point-name);
-
-  @media (max-width: $width) {
-    @content;
+  @if map-has-key($breakpoint-map, $point-name) {
+    $width: map-get($breakpoint-map, $point-name);
+  } @else {
+    $width: $point-name;
   }
+
+  @media (max-width: $width) { @content; }
 }

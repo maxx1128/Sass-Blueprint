@@ -10,10 +10,12 @@
 '_settings/containers';
 
 @import
+'_tools/mixins',
 '_tools/colors',
 '_tools/layout',
 '_tools/selectors',
-'_tools/synapse';
+'_tools/synapse',
+'_tools/typography';
 
 @import
 '_generic/normalize';

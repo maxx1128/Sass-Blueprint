@@ -5,9 +5,9 @@ $type-elements: h1, h2, h3, h4, h5, h6, p, small, tiny;
 @each $element in $type-elements {
 
   #{$element} {
+    // @include between_font_sizes(type(font-size, #{$element}));
     margin: type(margin, #{$element});
 
-    font-size: type(font-size, #{$element});
     line-height: type(line-height, #{$element});
   }
 }

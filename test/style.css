@@ -408,8 +408,8 @@ textarea {
 
 html,
 body {
-  color: #111;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #111;
 }
 
 body {
@@ -423,55 +423,46 @@ body {
 
 h1 {
   margin: 0 0 0.5em;
-  font-size: 3.05em;
   line-height: 1.95em;
 }
 
 h2 {
   margin: 0 0 0.5em;
-  font-size: 2.44em;
   line-height: 1.95em;
 }
 
 h3 {
   margin: 0 0 0.5em;
-  font-size: 1.95em;
   line-height: 1.95em;
 }
 
 h4 {
   margin: 0 0 0.33em;
-  font-size: 1.56em;
   line-height: 1.56em;
 }
 
 h5 {
   margin: 0 0 0.33em;
-  font-size: 1.25em;
   line-height: 1.56em;
 }
 
 h6 {
   margin: 0 0 0.33em;
-  font-size: 1em;
   line-height: 1.56em;
 }
 
 p {
   margin: 0 0 1em 0;
-  font-size: 1em;
   line-height: 1.56em;
 }
 
 small {
   margin: 0 0 0.5em;
-  font-size: 0.8em;
   line-height: 1.25em;
 }
 
 tiny {
   margin: 0 0 0.5em;
-  font-size: 0.64em;
   line-height: 1.25em;
 }
 
