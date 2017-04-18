@@ -15,7 +15,7 @@
   }
 }
 
-$g-base-spacing: em(16px);
+$g-base-spacing: rem(16px);
 
 $spacing-map: (
   quad   : decimal-round(($g-base-spacing * 4), 2),

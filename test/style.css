@@ -414,7 +414,7 @@ body {
 
 body {
   min-height: 100vh;
-  padding: 1em;
+  padding: 1rem;
 }
 
 * {
@@ -422,48 +422,273 @@ body {
 }
 
 h1 {
-  margin: 0 0 0.5em;
-  line-height: 1.95em;
+  font-size: 2.44rem;
+  line-height: 3.048rem;
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 30rem) {
+  h1 {
+    font-size: calc(1.87692rem + 1.87692vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h1 {
+    font-size: 3.05rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  h1 {
+    line-height: calc(2.34462rem + 2.34462vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h1 {
+    line-height: 3.81rem;
+  }
 }
 
 h2 {
-  margin: 0 0 0.5em;
-  line-height: 1.95em;
+  font-size: 1.952rem;
+  line-height: 2.44rem;
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 30rem) {
+  h2 {
+    font-size: calc(1.50154rem + 1.50154vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h2 {
+    font-size: 2.44rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  h2 {
+    line-height: calc(1.87692rem + 1.87692vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h2 {
+    line-height: 3.05rem;
+  }
 }
 
 h3 {
-  margin: 0 0 0.5em;
-  line-height: 1.95em;
+  font-size: 1.56rem;
+  line-height: 1.952rem;
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 30rem) {
+  h3 {
+    font-size: calc(1.2rem + 1.2vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h3 {
+    font-size: 1.95rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  h3 {
+    line-height: calc(1.50154rem + 1.50154vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h3 {
+    line-height: 2.44rem;
+  }
 }
 
 h4 {
-  margin: 0 0 0.33em;
-  line-height: 1.56em;
+  font-size: 1.248rem;
+  line-height: 1.56rem;
+  margin: 0 0 0.33rem;
+}
+
+@media (min-width: 30rem) {
+  h4 {
+    font-size: calc(0.96rem + 0.96vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h4 {
+    font-size: 1.56rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  h4 {
+    line-height: calc(1.2rem + 1.2vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h4 {
+    line-height: 1.95rem;
+  }
 }
 
 h5 {
-  margin: 0 0 0.33em;
-  line-height: 1.56em;
+  font-size: 1rem;
+  line-height: 1.56rem;
+  margin: 0 0 0.33rem;
+}
+
+@media (min-width: 30rem) {
+  h5 {
+    font-size: calc(0.76923rem + 0.76923vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  h5 {
+    line-height: calc(1.2rem + 1.2vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h5 {
+    line-height: 1.95rem;
+  }
 }
 
 h6 {
-  margin: 0 0 0.33em;
-  line-height: 1.56em;
+  font-size: 0.8rem;
+  line-height: 1.56rem;
+  margin: 0 0 0.33rem;
+}
+
+@media (min-width: 30rem) {
+  h6 {
+    font-size: calc(0.61538rem + 0.61538vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  h6 {
+    line-height: calc(1.2rem + 1.2vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  h6 {
+    line-height: 1.95rem;
+  }
 }
 
 p {
-  margin: 0 0 1em 0;
-  line-height: 1.56em;
+  font-size: 0.8rem;
+  line-height: 1.248rem;
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 30rem) {
+  p {
+    font-size: calc(0.61538rem + 0.61538vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  p {
+    line-height: calc(0.96rem + 0.96vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  p {
+    line-height: 1.56rem;
+  }
 }
 
 small {
-  margin: 0 0 0.5em;
-  line-height: 1.25em;
+  font-size: 0.64rem;
+  line-height: 1.248rem;
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 30rem) {
+  small {
+    font-size: calc(0.49231rem + 0.49231vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  small {
+    line-height: calc(0.96rem + 0.96vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  small {
+    line-height: 1.56rem;
+  }
 }
 
 tiny {
-  margin: 0 0 0.5em;
-  line-height: 1.25em;
+  font-size: 0.512rem;
+  line-height: 1.248rem;
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 30rem) {
+  tiny {
+    font-size: calc(0.39385rem + 0.39385vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  tiny {
+    font-size: 0.64rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  tiny {
+    line-height: calc(0.96rem + 0.96vw);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  tiny {
+    line-height: 1.56rem;
+  }
 }
 
 h1,

@@ -77,3 +77,11 @@
     @return $number;
   }
 }
+
+// For creating specific values between two breakpoints using calc and viewpoint units
+@function between($to, $from, $toWidth, $fromWidth) {
+  $slope: ($to - $from) / ($toWidth - $fromWidth);
+  $base: $from - $slope * $fromWidth;
+
+  @return calc(#{$base} + #{100vw * $slope});
+}

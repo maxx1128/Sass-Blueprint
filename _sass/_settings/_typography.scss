@@ -50,20 +50,20 @@ $typography-map: (
   ),
 
   line-height: (
-    h1: decimal-round(modular-scale(3), 2),
-    h2: decimal-round(modular-scale(3), 2),
-    h3: decimal-round(modular-scale(3), 2),
-    h4: decimal-round(modular-scale(2), 2),
-    h5: decimal-round(modular-scale(2), 2),
-    h6: decimal-round(modular-scale(2), 2),
+    h1: decimal-round(modular-scale(6), 2),
+    h2: decimal-round(modular-scale(5), 2),
+    h3: decimal-round(modular-scale(4), 2),
+    h4: decimal-round(modular-scale(3), 2),
+    h5: decimal-round(modular-scale(3), 2),
+    h6: decimal-round(modular-scale(3), 2),
     p: decimal-round(modular-scale(2), 2),
-    small: decimal-round(modular-scale(1), 2),
-    tiny: decimal-round(modular-scale(1), 2)
+    small: decimal-round(modular-scale(2), 2),
+    tiny: decimal-round(modular-scale(2), 2)
   ),
 
   margin: (
-    h1: 0 0 spacing(half),
-    h2: 0 0 spacing(half),
+    h1: 0 0 spacing(),
+    h2: 0 0 spacing(),
     h3: 0 0 spacing(half),
     h4: 0 0 spacing(third),
     h5: 0 0 spacing(third),
