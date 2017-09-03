@@ -5,10 +5,12 @@
 
   background-color: $color;
 
-  @if (lightness($color) > 50) {
-    color: $dark;
-  } @else {
-    color: $light;
+  @if (type-of($color) == 'color') {
+    @if (lightness($color) > 50) {
+      color: $dark;
+    } @else {
+      color: $light;
+    }
   }
 };
 
